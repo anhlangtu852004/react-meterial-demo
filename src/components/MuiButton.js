@@ -1,13 +1,29 @@
-import { Button, Stack, IconButton } from '@mui/material';
+import { 
+    Button, 
+    Stack, 
+    IconButton, 
+    ButtonGroup,
+    ToggleButton,
+    ToggleButtonGroup
+} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import { useState } from 'react';
+
 // import { styled } from '@mui/material/styles';
 
 
 
 const Muibutton = () => {
 
+    const [value, setValue] = useState(null && [])
 
+    const handleChange = (e, newValue) => {
+        setValue(newValue)
+    }
 
     return ( 
         <div>
@@ -37,7 +53,7 @@ const Muibutton = () => {
                 Upload
             </Button>
         </label>
-        <Button variant='contained' color='secondary' startIcon={<DeleteIcon />} color="success" 
+        <Button variant='contained' color='secondary' startIcon={<DeleteIcon />} 
             disableElevation
         >
             delete
@@ -48,6 +64,19 @@ const Muibutton = () => {
         <IconButton aria-label='delete'>
             <DeleteIcon />
         </IconButton>
+
+        <Stack direction='row' >
+        <ButtonGroup variant='contained' aria-label='label 1' color='secondary' orientation='vertical'>
+            <Button >one</Button>
+            <Button >two</Button>
+            <Button >three</Button>
+        </ButtonGroup>
+        </Stack>
+        <ToggleButtonGroup orientation='vertical' value={value} onChange={handleChange} exclusive color='success' >
+            <ToggleButton value='Bold' aria-label='Bold'><FormatBoldIcon/></ToggleButton>
+            <ToggleButton value='Italic' aria-label ='Italic'><FormatItalicIcon/></ToggleButton>
+            <ToggleButton value='Underline' aria-label='Underline'><FormatUnderlinedIcon/></ToggleButton>
+        </ToggleButtonGroup>
     </div>
      );
 }
