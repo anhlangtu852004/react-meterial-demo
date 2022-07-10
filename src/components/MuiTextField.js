@@ -52,11 +52,14 @@ const MuiTextField = () => {
                 <TextField type='number' label='number' variant='standard' helperText='this helper texts' />
                 <TextField type='password' label='password' variant='standard' helperText='this helper texts' focused />
                 <TextField select label='select' variant='standard' helperText='this helper texts' SelectProps={{ native: true,}}>
-                    {currencies.map((option) => (
+                    {/* {currencies.map((option) => (
                         <option key={option.value} value={option.value}>
                         {option.label}
                         </option>
-                    ))}
+                    ))} */}
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
                 </TextField>
                 {/* <TextField disable label='Name' variant='standard' /> */}
             </Stack>
