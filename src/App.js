@@ -16,10 +16,13 @@ import './App.css';
 // import MuiLinks from './components/MuiLinks'
 // import MuiBreadcrumb from './components/MuiBreadcrumb'
 // import MuiDrawer from './components/MuiDrawer'
-import MuiSpeedDial from './components/MuiSpeedDial'
-import MuiBottomNavigation from './components/MuiBottomNavigation'
-import MuiAvatar from './components/MuiAvatar'
-import MuiBadge from './components/MuiBadge'
+// import MuiSpeedDial from './components/MuiSpeedDial'
+// import MuiBottomNavigation from './components/MuiBottomNavigation'
+// import MuiAvatar from './components/MuiAvatar'
+// import MuiBadge from './components/MuiBadge'
+// import MuiList from './components/MuiList'
+// import MuiChips from './components/MuiChips'
+import MuiTooltip from './components/MuiTooltip'
 
 
 function App() {
@@ -42,10 +45,13 @@ function App() {
       {/* <MuiLinks /> */}
       {/* <MuiBreadcrumb /> */}
       {/* <MuiDrawer /> */}
-      <MuiSpeedDial />
-      < MuiBottomNavigation />
-      < MuiAvatar />
-      <MuiBadge />
+      {/* <MuiSpeedDial /> */}
+      {/* < MuiBottomNavigation /> */}
+      {/* < MuiAvatar /> */}
+      {/* <MuiBadge /> */}
+      {/* <MuiList /> */}
+      {/* <MuiChips /> */}
+      <MuiTooltip />
     </div>
   );
 }
