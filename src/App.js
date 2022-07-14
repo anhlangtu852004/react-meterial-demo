@@ -28,7 +28,9 @@ import './App.css';
 // import MuiSnackbar from './components/MuiSnackbar'
 // import MuiDialog from './components/MuiDialog'
 // import MuiProgress from './components/MuiProgress'
-import MuiSkeleton from './components/MuiSkeleton'
+// import MuiSkeleton from './components/MuiSkeleton'
+// import MuiDateTimeDatetime from './components/MuiDateTimeDatetime'
+import MuiTabs from './components/MuiTabs'
 
 
 function App() {
@@ -63,7 +65,9 @@ function App() {
       {/* <MuiSnackbar /> */}
       {/* <MuiDialog /> */}
       {/* <MuiProgress /> */}
-      <MuiSkeleton />
+      {/* <MuiSkeleton /> */}
+      {/* <MuiDateTimeDatetime /> */}
+      <MuiTabs />
     </div>
   );
 }
